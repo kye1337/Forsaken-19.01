@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{d7a2d13b-9cf4-4cea-9bfd-e3d042f157f2}</ProjectGuid>
+    <RootNamespace>Forsaken</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;FORSAKEN_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;FORSAKEN_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;FORSAKEN_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;FORSAKEN_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>./;./Engine/Source/Runtime/Core/Public/;./Engine/Source/Runtime/Engine/Classes/;./FortniteGame/Source/FortniteAI/Public/;./FortniteGame/Source/FortniteGame/Public/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Engine\Plugins\Experimental\CommonConversation\Source\CommonConversationRuntime\Private\ConversationContext.cpp" />
+    <ClCompile Include="Engine\Plugins\Experimental\CommonConversation\Source\CommonConversationRuntime\Private\ConversationInstance.cpp" />
+    <ClCompile Include="Engine\Plugins\Experimental\CommonConversation\Source\CommonConversationRuntime\Private\ConversationLibrary.cpp" />
+    <ClCompile Include="Engine\Plugins\Experimental\CommonConversation\Source\CommonConversationRuntime\Private\ConversationParticipantComponent.cpp" />
+    <ClCompile Include="Engine\Plugins\Experimental\CommonConversation\Source\CommonConversationRuntime\Private\ConversationRegistry.cpp" />
+    <ClCompile Include="Engine\Plugins\Experimental\CommonConversation\Source\CommonConversationRuntime\Private\ConversationTaskNode.cpp" />
+    <ClCompile Include="Engine\Plugins\Experimental\CommonConversation\Source\CommonConversationRuntime\Private\ConversationTypes.cpp" />
+    <ClCompile Include="Engine\Plugins\Runtime\GameplayAbilities\Source\GameplayAbilities\Private\Abilities\GameplayAbility.cpp" />
+    <ClCompile Include="Engine\Plugins\Runtime\GameplayAbilities\Source\GameplayAbilities\Private\AbilitySystemComponent_Abilities.cpp" />
+    <ClCompile Include="Engine\Restricted\NotForLicensees\Plugins\OnlineGameplayFramework\Source\McpProfileSys\Private\McpProfileGroup.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Engine\Private\GameMode.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Engine\Private\GameModeBase.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Engine\Private\KismetDetourLibrary.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Engine\Private\NetDriver.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Engine\Private\PlayerController.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Engine\Private\World.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\NavigationSystem\Private\NavigationSystem.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteAI\Private\AI\FortAthenaAIBotController.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteAI\Private\AI\Inventory\FortBotInventoryInfo.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteAI\Private\Athena\AI\FortAthenaAISpawnerDataComponent_AIBotCosmeticBase.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteAI\Private\Athena\AI\FortAthenaAISpawnerDataComponent_InventoryBase.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteAI\Private\Athena\AI\Systems\AthenaAIServicePlayerBots.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Athena\FortAthenaVehicleSpawner.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Athena\FortGameModeAthena.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Athena\FortGameStateAthena.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Athena\FortPlayerControllerAthena.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Athena\Markers\AthenaMarkerComponent.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Building\BuildingContainer.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Building\BuildingSMActor.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Components\FortControllerComponent_Aircraft.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\FortKismetLibrary.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Items\FortInventory.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Items\FortInventoryOwnerInterface.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Items\FortLootPackage.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Items\FortWorldItem.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Missions\FortMissionLibrary.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Pawns\FortPawn.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Pawns\FortPhysicsPawn.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Pawns\FortPlayerPawn.cpp" />
+    <ClCompile Include="FortniteGame\Source\FortniteGame\Private\Player\FortPlayerController.cpp" />
+    <ClCompile Include="SDK\Source\Runtime\DevelopmentKit\SDK\AIModule_functions.cpp" />
+    <ClCompile Include="SDK\Source\Runtime\DevelopmentKit\SDK\Basic.cpp" />
+    <ClCompile Include="SDK\Source\Runtime\DevelopmentKit\SDK\CommonConversationRuntime_functions.cpp" />
+    <ClCompile Include="SDK\Source\Runtime\DevelopmentKit\SDK\CoreUObject_functions.cpp" />
+    <ClCompile Include="SDK\Source\Runtime\DevelopmentKit\SDK\Engine_functions.cpp" />
+    <ClCompile Include="SDK\Source\Runtime\DevelopmentKit\SDK\FortniteGame_functions.cpp" />
+    <ClCompile Include="SDK\Source\Runtime\DevelopmentKit\SDK\GameplayAbilities_functions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Plugins\Experimental\CommonConversation\Source\CommonConversationRuntime\Public\ConversationContext.h" />
+    <ClInclude Include="Engine\Plugins\Experimental\CommonConversation\Source\CommonConversationRuntime\Public\ConversationInstance.h" />
+    <ClInclude Include="Engine\Plugins\Experimental\CommonConversation\Source\CommonConversationRuntime\Public\ConversationLibrary.h" />
+    <ClInclude Include="Engine\Plugins\Experimental\CommonConversation\Source\CommonConversationRuntime\Public\ConversationParticipantComponent.h" />
+    <ClInclude Include="Engine\Plugins\Experimental\CommonConversation\Source\CommonConversationRuntime\Public\ConversationRegistry.h" />
+    <ClInclude Include="Engine\Plugins\Experimental\CommonConversation\Source\CommonConversationRuntime\Public\ConversationTaskNode.h" />
+    <ClInclude Include="Engine\Plugins\Experimental\CommonConversation\Source\CommonConversationRuntime\Public\ConversationTypes.h" />
+    <ClInclude Include="Engine\Plugins\Runtime\GameplayAbilities\Source\GameplayAbilities\Public\Abilities\GameplayAbility.h" />
+    <ClInclude Include="Engine\Plugins\Runtime\GameplayAbilities\Source\GameplayAbilities\Public\AbilitySystemComponent.h" />
+    <ClInclude Include="Engine\Restricted\NotForLicensees\Plugins\OnlineGameplayFramework\Source\McpProfileSys\Public\McpProfileGroup.h" />
+    <ClInclude Include="Engine\Source\Runtime\CoreUObject\Public\Templates\Casts.h" />
+    <ClInclude Include="Engine\Source\Runtime\CoreUObject\Public\UObject\Stack.h" />
+    <ClInclude Include="Engine\Source\Runtime\Core\Public\CoreGlobals.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Engine\DataTable.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Engine\EngineBaseTypes.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Engine\NetDriver.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Engine\World.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\GameFramework\GameMode.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\GameFramework\GameModeBase.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\GameFramework\PlayerController.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Kismet\KismetDetourLibrary.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Kismet\KismetMemoryLibrary.h" />
+    <ClInclude Include="Engine\Source\Runtime\NavigationSystem\Public\NavigationSystem.h" />
+    <ClInclude Include="Engine\Source\ThirdParty\MinHook\1.3.3\include\MinHook.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteAI\Public\AI\FortAthenaAIBotController.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteAI\Public\AI\Inventory\FortBotInventoryInfo.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteAI\Public\Athena\AI\FortAthenaAISpawnerDataComponent_AIBotCosmeticBase.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteAI\Public\Athena\AI\FortAthenaAISpawnerDataComponent_InventoryBase.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteAI\Public\Athena\AI\Systems\AthenaAIServicePlayerBots.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Athena\FortAthenaVehicleSpawner.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Athena\FortGameModeAthena.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Athena\FortGameStateAthena.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Athena\FortPlayerControllerAthena.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Athena\Markers\AthenaMarkerComponent.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Building\BuildingContainer.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Building\BuildingSMActor.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Components\FortControllerComponent_Aircraft.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\FortKismetLibrary.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Items\FortInventory.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Items\FortInventoryOwnerInterface.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Items\FortLootPackage.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Items\FortWorldItem.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Missions\FortMissionLibrary.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Pawns\FortPawn.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Pawns\FortPhysicsPawn.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Pawns\FortPlayerPawn.h" />
+    <ClInclude Include="FortniteGame\Source\FortniteGame\Public\Player\FortPlayerController.h" />
+    <ClInclude Include="SDK\Source\Runtime\DevelopmentKit\PropertyFixup.hpp" />
+    <ClInclude Include="SDK\Source\Runtime\DevelopmentKit\SDK.hpp" />
+    <ClInclude Include="SDK\Source\Runtime\DevelopmentKit\UnrealContainers.hpp" />
+    <ClInclude Include="SDK\Source\Runtime\DevelopmentKit\UtfN.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Engine\Source\ThirdParty\MinHook\1.3.3\lib\minhook.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
